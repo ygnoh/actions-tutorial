@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Greeting action step
+        id: greeting
+        uses: ygnoh/actions-greeting@v1.0
+        with:
+          who-to-greet: 'ygnoh'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.greeting.outputs.time }}"
