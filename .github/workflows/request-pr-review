@@ -1,0 +1,13 @@
+name: Request PR Review
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  requestPrReview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request PR Review
+        uses: ygnoh/actions-request-pr-review@v1.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
