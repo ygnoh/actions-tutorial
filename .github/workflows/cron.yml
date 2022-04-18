@@ -9,11 +9,8 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Greeting action step
-        id: greeting
-        uses: ygnoh/actions-greeting@v1.0
+      - name: Request PR Review
+        uses: ygnoh/actions-request-pr-review@v0.1
         with:
-          who-to-greet: 'ygnoh'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.greeting.outputs.time }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
