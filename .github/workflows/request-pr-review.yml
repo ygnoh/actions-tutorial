@@ -11,3 +11,4 @@ jobs:
         uses: ygnoh/actions-request-pr-review@v0.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
