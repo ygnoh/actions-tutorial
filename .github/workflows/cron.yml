@@ -3,14 +3,15 @@ name: cron
 on:
   workflow_dispatch:
   schedule:
-    - cron: '8 5 * * 1-5'
+    - cron: '12 5 * * 1-5'
     
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
       - name: Request PR Review
-        uses: ygnoh/actions-request-pr-review@v0.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
+      - run: echo Hello, world!~~!
+#         uses: ygnoh/actions-request-pr-review@v0.1
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
