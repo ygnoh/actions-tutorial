@@ -9,7 +9,7 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello, world!~~!
+      - run: node echo.js
 #         uses: ygnoh/actions-request-pr-review@v0.1
 #         with:
 #           token: ${{ secrets.GITHUB_TOKEN }}
