@@ -3,7 +3,7 @@ name: cron
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '4 5 * * 1,5'
     
 jobs:
   cron:
