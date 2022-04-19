@@ -9,7 +9,6 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Request PR Review
       - run: echo Hello, world!~~!
 #         uses: ygnoh/actions-request-pr-review@v0.1
 #         with:
