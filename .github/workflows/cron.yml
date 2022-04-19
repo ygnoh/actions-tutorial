@@ -9,8 +9,8 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - run: node echo.js
-#         uses: ygnoh/actions-request-pr-review@v0.1
-#         with:
-#           token: ${{ secrets.GITHUB_TOKEN }}
-#           slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
+      - name: Request PR Review
+        uses: ygnoh/actions-request-pr-review@v0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
