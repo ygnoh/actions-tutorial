@@ -9,7 +9,6 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Request PR Review
         uses: ygnoh/actions-request-pr-review@v0.1
         with:
