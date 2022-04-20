@@ -15,3 +15,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
+          repoUrl: 'github.com/ygnoh/actions-tutorial'
