@@ -16,6 +16,9 @@ on:
 #  check_suite:
 #    types:
 #      - completed
+env:
+  PR_NUMBER: ${{ github.event.number }}
+  
 jobs:
   mergeable:
     runs-on: ubuntu-latest
