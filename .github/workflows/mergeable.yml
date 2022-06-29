@@ -17,7 +17,7 @@ on:
 #    types:
 #      - completed
 jobs:
-  automerge:
+  mergeable:
     runs-on: [self-hosted]
     steps:
       - name: mergeable
