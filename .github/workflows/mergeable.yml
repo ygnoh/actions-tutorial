@@ -16,8 +16,6 @@ on:
 #  check_suite:
 #    types:
 #      - completed
-env:
-  PR_NUMBER: ${{ github.event.number }}
   
 jobs:
   mergeable:
@@ -28,3 +26,5 @@ jobs:
         with:
           node-version: '12'
       - run: node mergeable.js
+        env:
+          PR_NUMBER: ${{ github.event.number }}
