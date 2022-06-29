@@ -1,1 +1,1 @@
-console.log("from local script", env);
+console.log("from local script", PR_NUMBER);
