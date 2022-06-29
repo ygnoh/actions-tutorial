@@ -20,5 +20,8 @@ jobs:
   mergeable:
     runs-on: ubuntu-latest
     steps:
-      - name: mergeable
-        uses: "ygnoh/actions-mergeable@v0.0"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '12'
+      - run: node mergeable.js
