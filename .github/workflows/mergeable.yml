@@ -18,7 +18,7 @@ on:
 #      - completed
 jobs:
   mergeable:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
       - name: mergeable
         uses: "ygnoh/actions-mergeable@v0.0"
