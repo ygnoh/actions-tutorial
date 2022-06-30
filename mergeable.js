@@ -1,1 +1,2 @@
-console.log("from local script", process.env.PR_NUMBER);
+console.log("first", process.env.PR_NUMBER);
+console.log("second", process.env.PR);
