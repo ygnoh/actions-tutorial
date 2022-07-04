@@ -21,11 +21,8 @@ jobs:
   mergeable:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '12'
-      - uses: ygnoh/actions-mergeable@v0.0
+      - name: Mergeable
+        uses: ygnoh/actions-mergeable@v0.0
         with:
           prNumber: 'testetst'
           pr: 'prprpr'
