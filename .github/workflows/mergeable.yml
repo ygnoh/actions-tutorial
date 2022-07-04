@@ -27,5 +27,5 @@ jobs:
           node-version: '12'
       - uses: ygnoh/actions-mergeable@v0.0
         with:
-          prNumber: ${{ github.event.number }}
-          pr: ${{ github.event }}
+          prNumber: 'testetst'
+          pr: 'prprpr'
