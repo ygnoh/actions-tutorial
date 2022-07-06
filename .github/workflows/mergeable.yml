@@ -22,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mergeable
-      - uses: actions/setup-node@v3
+      - uses: ygnoh/mergeable@v0.0
         with:
-          node-version: '12'
-      - run: node mergeable.js
+          token: ${{ secrets.GITHUB_TOKEN }}
