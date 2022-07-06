@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mergeable
-        uses: ygnoh/actions-mergeable@v0.0
+      - uses: actions/setup-node@v3
         with:
-          prNumber: "456"
-          pr: '123'
+          node-version: '12'
+      - run: node mergeable.js
