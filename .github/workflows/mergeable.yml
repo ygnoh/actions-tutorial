@@ -2,20 +2,11 @@ name: mergeable
 on:
   pull_request:
     types:
-      - labeled
-      - unlabeled
-#      - synchronize
-#      - opened
-#      - edited
-#      - ready_for_review
-#      - reopened
-#      - unlocked
-#  pull_request_review:
-#    types:
-#      - submitted
-#  check_suite:
-#    types:
-#      - completed
+      - opened
+      - review_requested
+      - review_request_removed
+      - ready_for_review
+  pull_request_review:
   
 jobs:
   mergeable:
