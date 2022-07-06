@@ -22,6 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mergeable
-      - uses: ygnoh/mergeable@v0.0
+        uses: ygnoh/mergeable@v0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
