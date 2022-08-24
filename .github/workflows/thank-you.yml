@@ -1,0 +1,13 @@
+name: Thank you
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Thank you
+        uses: ygnoh/actions-thank-you@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
